@@ -1,0 +1,28 @@
+const tokenAddress = "0x51AB9909A57b9f5847cc2bbA14F342e39B8bd78B";
+const tokenSymbol = "SLIPPER";
+const tokenDecimals = 6;
+const tokenImage = "https://github.com/KostaYankov03/SlipperCoin/blob/main/logo.png";
+
+async function addToken() {
+  try {
+    const wasAdded = await ethereum.request({
+      method: "wallet_watchAsset",
+      params: {
+        type: "ERC20",
+        options: {
+          address: tokenAddress,
+          symbol: tokenSymbol,
+          decimals: tokenDecimals,
+          image: tokenImage,
+        },
+      },
+    });
+    if (wasAdded) {
+      console.log("Токен успешно добавлен!");
+    } else {
+      console.log("Пользователь отклонил добавление токена.");
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
