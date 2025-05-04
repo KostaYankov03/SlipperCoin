@@ -1,0 +1,16 @@
+{
+  "name": "Slipper Token List",
+  "logoURI": "https://github.com/KostaYankov03/SlipperCoin/blob/main/logo.png",
+  "keywords": ["meme", "slipper"],
+  "timestamp": "2025-05-04T00:00:00+00:00",
+  "tokens": [
+    {
+      "chainId": 56,
+      "address": "0x51AB9909A57b9f5847cc2bbA14F342e39B8bd78B",
+      "symbol": "SLIPPER",
+      "name": "Slipper",
+      "decimals": 6,
+      "logoURI": "https://github.com/KostaYankov03/SlipperCoin/blob/main/logo.png"
+    }
+  ]
+}
