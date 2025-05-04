@@ -1,0 +1,2 @@
+# SlipperCoin
+Meme coin
